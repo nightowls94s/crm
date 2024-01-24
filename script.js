@@ -21,12 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     },
     
-    //events: '/api/events'  // Use the endpoint to fetch events
+    events: '/api/events'  // Use the endpoint to fetch events
 
     //events: [], // Add your events data here
 
-    events: 'http://localhost:8080/api/events'  // Adjust the URL based on your server's configuration
-    
 
 });
 async function getWeatherInfo(date) {
