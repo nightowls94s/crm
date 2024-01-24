@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduling App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="schedule-section">
+      <div class="buttons">
+        <button onclick="switchView('month')">Month</button>
+        <button onclick="switchView('agendaWeek')">Week</button>
+        <button onclick="switchView('agendaDay')">Day</button>
+      </div>
+      <div id="calendar"></div>
+      <form id="eventForm">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required>
+
+        <button type="button" onclick="addEvent()">Add Event</button>
+      </form>
+    </div>
+
+    <div class="weather-section">
+      <h2>Weather Forecast</h2>
+      <div id="weather"></div>
+    </div>
+
+    <div class="map-section">
+      <h2>Google Maps</h2>
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

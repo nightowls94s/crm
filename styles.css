@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.schedule-section {
+  flex: 2;
+  padding: 20px;
+}
+
+.weather-section,
+.map-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+#calendar {
+  margin-top: 20px;
+}
+
+#eventForm {
+  margin-top: 20px;
+}
+
+#weather {
+  /* Style weather forecast container */
+}
+
+#map {
+  /* Style Google Maps container */
+}
