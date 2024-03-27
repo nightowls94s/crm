@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-app.use(cors());
+app.use(cors()); 
 
 // Connect to MongoDB (replace 'your_database_url' with your MongoDB connection string)
 mongoose.connect('mongodb+srv://nightowls94s:wNMQxxn$27i4YP.@cluster0.povgju3.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
